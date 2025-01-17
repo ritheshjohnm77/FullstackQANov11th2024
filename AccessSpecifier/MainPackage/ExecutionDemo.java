@@ -19,7 +19,7 @@ public class ExecutionDemo
         //Execution IndependentClassInP1Package Constructor
         IndependentClassInP1Package o3=new IndependentClassInP1Package();
         //Execution Protection class Constructor
-        //Protection o2=new Protection();
+        Protection o=new Protection();
         //Execution SubClassInP1Package Constructor
         SubClassP2Package o4=new SubClassP2Package();
        // Execution IndependentClassInP1Package Constructor
