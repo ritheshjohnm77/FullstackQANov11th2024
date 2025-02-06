@@ -1,4 +1,4 @@
-package com.sgTesting;
+package com.sgtesting;
 
 import static org.junit.Assert.assertTrue;
 

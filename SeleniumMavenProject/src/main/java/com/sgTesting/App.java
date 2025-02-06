@@ -1,4 +1,4 @@
-package com.sgTesting;
+package com.sgtesting;
 
 /**
  * Hello world!
