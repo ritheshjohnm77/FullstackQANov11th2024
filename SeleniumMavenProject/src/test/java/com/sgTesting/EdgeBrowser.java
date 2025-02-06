@@ -1,11 +1,12 @@
-package com.sgtesting.tests.BrowserDemo;
+package com.sgtesting;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
-public class ChromeBrowserDemo
+public class EdgeBrowser
 {
-    private static WebDriver oBrowser=null;
+    public static WebDriver oBrowser=null;
     public static void main(String[] args)
     {
         launchBrowser();
@@ -16,11 +17,9 @@ public class ChromeBrowserDemo
     {
         try
         {
-            oBrowser=new ChromeDriver();
-            oBrowser.manage().window().maximize();
-            Thread.sleep(4000);
+            oBrowser = new EdgeDriver();
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             e.printStackTrace();
         }
@@ -29,8 +28,8 @@ public class ChromeBrowserDemo
     {
         try
         {
-             oBrowser.get("http://localhost:81/login.do");
-             Thread.sleep(2000);
+            oBrowser.get("http://localhost:81/login.do");
+            Thread.sleep(4000);
         }
         catch (Exception e)
         {
@@ -47,5 +46,6 @@ public class ChromeBrowserDemo
         {
             e.printStackTrace();
         }
+
     }
 }
