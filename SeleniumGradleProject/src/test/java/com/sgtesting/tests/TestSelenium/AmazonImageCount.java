@@ -19,6 +19,7 @@ public class AmazonImageCount
             launchBrowser();
             navigateURL();
             relativeCSSUsingTagNameWithAttributeName();
+            closeApplication();
         }
 
         private static void launchBrowser()
@@ -60,5 +61,16 @@ public class AmazonImageCount
             List<WebElement> oLinks=oBrowser.findElements(By.cssSelector("img"));
             System.out.println("Number of SmartPhone images count in Amazon:"+oLinks.size());
         }
+    private static void closeApplication()
+    {
+        try
+        {
+            oBrowser.close();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
     }
 
